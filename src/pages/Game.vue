@@ -19,6 +19,7 @@ const leftLine = ref([...Array(9).keys()].reverse().map(i => i + 28));
       </div>
       <div class="row horizontal-row col-start-2 col-end-11 row-start-1">
         <div class="space" v-for="i in topLine">
+          <div class="price top">300$</div>
           Field {{i}}
         </div>
       </div>
@@ -27,6 +28,7 @@ const leftLine = ref([...Array(9).keys()].reverse().map(i => i + 28));
       </div>
       <div class="row right-row">
         <div class="space" v-for="i in rightLine">
+          <div class="price right">300$</div>
           Field {{i}}
         </div>
       </div>
@@ -35,6 +37,7 @@ const leftLine = ref([...Array(9).keys()].reverse().map(i => i + 28));
       </div>
       <div class="row horizontal-row col-start-11 col-end-2 row-start-11">
         <div class="space" v-for="i in bottomLine" :key="i">
+          <div class="price bottom">300$</div>
           Field {{i}}
         </div>
       </div>
@@ -43,6 +46,7 @@ const leftLine = ref([...Array(9).keys()].reverse().map(i => i + 28));
       </div>
       <div class="row left-row">
         <div class="space" v-for="i in leftLine">
+          <div class="price left">300$</div>
           Field {{i}}
         </div>
       </div>
@@ -87,9 +91,24 @@ const leftLine = ref([...Array(9).keys()].reverse().map(i => i + 28));
 }
 
 .space {
-  @apply bg-secondary text-center;
+  @apply bg-secondary text-center relative;
   .container {
     @apply flex flex-col justify-between relative origin-center h-[125px] w-20;
+  }
+  .price {
+    @apply bg-white text-main h-5 absolute w-[50px] flex justify-center items-center;
+  }
+  .top {
+    @apply -top-5;
+  }
+  .right {
+    @apply rotate-90 origin-bottom-right bottom-0 right-0;
+  }
+  .bottom {
+    @apply -bottom-5;
+  }
+  .left {
+    @apply -rotate-90 origin-bottom-left bottom-0;
   }
 }
 </style>
