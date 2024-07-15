@@ -1,0 +1,23 @@
+@use 'sass:math';
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@function VWFullHD($size) {
+  $size: $size * 1px;
+  $fullhdwidth: 1920px;
+  $size: math.div($size, $fullhdwidth) * 100vw;
+  @return $size;
+}
+
+@function VHFullHD($size) {
+  $size: $size * 1px;
+  $fullhdheight: 1080px;
+  $size: math.div($size, $fullhdheight) * 100vh;
+  @return $size
+}
+
+body {
+  @apply bg-main text-white
+}

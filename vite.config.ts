@@ -8,6 +8,12 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  css: {
+    modules: {
+      localsConvention: 'camelCaseOnly',
+      scopeBehaviour: 'local',
+    }
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

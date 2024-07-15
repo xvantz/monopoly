@@ -1,0 +1,345 @@
+@import '@/assets/global.scss';
+
+.table {
+  margin: VHFullHD(23) 0;
+  width: VWFullHD(1000);
+  height: VWFullHD(1000);
+  outline: 10px solid #708D78;
+  border-radius: VWFullHD(8);
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #CDEBD3;
+  color: #000;
+  font-family: Montserrat, sans-serif;
+
+  .top {
+    display: flex;
+    width: VWFullHD(1000);
+    height: VWFullHD(133);
+
+    .start {
+      width: VWFullHD(133);
+      height: VWFullHD(133);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .image {
+        width: VWFullHD(100);
+        height: VWFullHD(100);
+      }
+    }
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: VWFullHD(81.55);
+      height: VWFullHD(133);
+      border-right: 3px solid #000;
+      border-bottom: 3px solid #000;
+
+      &:nth-child(2) {
+        border-left: 3px solid #000;
+      }
+
+      .imageBlock {
+        width: 100%;
+        height: VWFullHD(100);
+        display: flex;
+        justify-content: center;
+      }
+
+      .chanceBlock {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .chance {
+          background-image: url("./img/chance.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          width: VWFullHD(67);
+          height: VWFullHD(80);
+        }
+      }
+
+      .price {
+        display: flex;
+        justify-content: center;
+        font-size: VWFullHD(14);
+        font-weight: 700;
+      }
+
+      .red {
+        width: 100%;
+        height: VWFullHD(23);
+        background-color: red;
+        border-bottom: 3px solid #000;
+      }
+
+      .yellow {
+        width: 100%;
+        height: VWFullHD(23);
+        background-color: yellow;
+        border-bottom: 3px solid #000;
+      }
+    }
+
+    .jail {
+      width: VWFullHD(133);
+      height: VWFullHD(133);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .image {
+        width: VWFullHD(100);
+        height: VWFullHD(100);
+      }
+    }
+  }
+
+  .center {
+    width: VWFullHD(1000);
+    height: VWFullHD(734);
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      width: VWFullHD(133);
+      height: VWFullHD(734);
+
+      .block {
+        display: flex;
+        justify-content: space-between;
+        width: VWFullHD(133);
+        height: VWFullHD(81.55);
+        border-bottom: 3px solid #000;
+        border-right: 3px solid #000;
+
+        &:first-child {
+          border-top: 3px solid #000;
+        }
+
+        .purple {
+          width: VWFullHD(23);
+          height: 100%;
+          background-color: purple;
+          border-right: 3px solid #000;
+        }
+
+        .orange {
+          width: VWFullHD(23);
+          height: 100%;
+          background-color: orange;
+          border-right: 3px solid #000;
+        }
+
+        .imageBlock {
+          width: VWFullHD(100);
+          height: 100%;
+        }
+
+        .chanceBlock {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: rotate(270deg);
+
+          .chance {
+            background-image: url("./img/chance.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: VWFullHD(67);
+            height: VWFullHD(80);
+          }
+        }
+
+        .price {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: VWFullHD(14);
+          font-weight: 700;
+          writing-mode: vertical-lr;
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .center {
+      width: VWFullHD(734);
+      height: VWFullHD(734);
+      background-color: #000;
+    }
+
+    .right {
+      width: VWFullHD(133);
+      height: VWFullHD(734);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .block {
+        display: flex;
+        flex-direction: row-reverse;
+        width: VWFullHD(133);
+        height: VWFullHD(81.55);
+        border-bottom: 3px solid #000;
+        border-left: 3px solid #000;
+        justify-content: space-between;
+
+        &:first-child {
+          border-top: 3px solid #000;
+        }
+
+        .green {
+          width: VWFullHD(23);
+          height: 100%;
+          background-color: green;
+          border-left: 3px solid #000;
+        }
+
+        .blue {
+          width: VWFullHD(23);
+          height: 100%;
+          background-color: blue;
+          border-left: 3px solid #000;
+        }
+
+        .imageBlock {
+          width: VWFullHD(100);
+          height: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
+        .chanceBlock {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: rotate(90deg);
+
+          .chance {
+            background-image: url("./img/chance.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: VWFullHD(67);
+            height: VWFullHD(80);
+          }
+        }
+
+        .price {
+          display: flex;
+          justify-content: center;
+          font-size: VWFullHD(14);
+          font-weight: 700;
+          writing-mode: vertical-lr;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    width: VWFullHD(1000);
+    height: VWFullHD(133);
+    justify-content: space-between;
+
+    .toJail {
+      width: VWFullHD(133);
+      height: VWFullHD(133);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .image {
+        width: VWFullHD(100);
+        height: VWFullHD(100);
+      }
+    }
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      width: VWFullHD(81.55);
+      height: VWFullHD(133);
+      border-left: 3px solid #000;
+      border-top: 3px solid #000;
+
+      &:nth-child(10) {
+        border-right: 3px solid #000;
+      }
+
+      .imageBlock {
+        width: 100%;
+        height: VWFullHD(100);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .chanceBlock {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .chance {
+          background-image: url("./img/chance.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          width: VWFullHD(67);
+          height: VWFullHD(80);
+        }
+      }
+
+      .price {
+        display: flex;
+        justify-content: center;
+        font-size: VWFullHD(14);
+        font-weight: 700;
+      }
+
+      .brown {
+        width: 100%;
+        height: VWFullHD(23);
+        background-color: brown;
+        border-bottom: 3px solid #000;
+      }
+
+      .lightBlue {
+        width: 100%;
+        height: VWFullHD(23);
+        background-color: lightblue;
+        border-bottom: 3px solid #000;
+      }
+    }
+
+    .parking {
+      width: VWFullHD(133);
+      height: VWFullHD(133);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .image {
+        width: VWFullHD(100);
+        height: VWFullHD(100);
+      }
+    }
+  }
+
+}
