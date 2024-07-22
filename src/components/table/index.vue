@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import style from './main.module.scss'
+  import Players from './elements/players/index.vue'
 
   const topBlocks = [
     {name: "1", color: "red", type: "block", price: 60, class: "viber"},
@@ -51,22 +52,12 @@
 </script>
 
 <template>
-  <div :class="style.table">
-    <div :class="style.top">
-      <div :class="style.start"><img :class="style.image" src="/board/main/start-up.png" alt="start-up"/></div>
-      <div :class="style.block" v-for="(block, index) in topBlocks" :key="index">
-        <div :class="style[block.color]"/>
-        <div :class="block.type === 'block' ? style.imageBlock : style.chanceBlock">
-          <div v-if="block.class" :class="style[block.class]"/>
-          <div v-if="block.type === 'chance'" :class="style.chance"/>
-        </div>
-        <div v-if="block.price" :class="style.price">{{block.price}} M</div>
-      </div>
-      <div :class="style.jail"><img :class="style.image" src="/board/main/jail.png" alt="jail"/></div>
-    </div>
-    <div :class="style.center">
-      <div :class="style.left">
-        <div :class="style.block" v-for="(block, index) in leftBlocks" :key="index">
+  <div :class="$style.tableGame">
+    <Players />
+    <div :class="style.table">
+      <div :class="style.top">
+        <div :class="style.start"><img :class="style.image" src="/board/main/start-up.png" alt="start-up"/></div>
+        <div :class="style.block" v-for="(block, index) in topBlocks" :key="index">
           <div :class="style[block.color]"/>
           <div :class="block.type === 'block' ? style.imageBlock : style.chanceBlock">
             <div v-if="block.class" :class="style[block.class]"/>
@@ -74,35 +65,54 @@
           </div>
           <div v-if="block.price" :class="style.price">{{block.price}} M</div>
         </div>
+        <div :class="style.jail"><img :class="style.image" src="/board/main/jail.png" alt="jail"/></div>
       </div>
-      <div :class="style.center"></div>
-      <div :class="style.right">
-        <div :class="style.block" v-for="(block, index) in rightBlocks" :key="index">
+      <div :class="style.center">
+        <div :class="style.left">
+          <div :class="style.block" v-for="(block, index) in leftBlocks" :key="index">
+            <div :class="style[block.color]"/>
+            <div :class="block.type === 'block' ? style.imageBlock : style.chanceBlock">
+              <div v-if="block.class" :class="style[block.class]"/>
+              <div v-if="block.type === 'chance'" :class="style.chance"/>
+            </div>
+            <div v-if="block.price" :class="style.price">{{block.price}} M</div>
+          </div>
+        </div>
+        <div :class="style.center"></div>
+        <div :class="style.right">
+          <div :class="style.block" v-for="(block, index) in rightBlocks" :key="index">
+            <div :class="style[block.color]"/>
+            <div :class="block.type === 'block' ? style.imageBlock : style.chanceBlock">
+              <div v-if="block.class" :class="style[block.class]"/>
+              <div v-if="block.type === 'chance'" :class="style.chance"/>
+            </div>
+            <div v-if="block.price" :class="style.price">{{block.price}} M</div>
+          </div>
+        </div>
+      </div>
+      <div :class="style.bottom">
+        <div :class="style.toJail"><img :class="style.image" src="/board/main/guard.png" alt="to jail"/></div>
+        <div :class="style.block" v-for="(block, index) in bottomBlocks" :key="index">
           <div :class="style[block.color]"/>
           <div :class="block.type === 'block' ? style.imageBlock : style.chanceBlock">
             <div v-if="block.class" :class="style[block.class]"/>
             <div v-if="block.type === 'chance'" :class="style.chance"/>
           </div>
-          <div v-if="block.price" :class="style.price">{{block.price}} M</div>
+          <div v-if="block.price" :class="style.price">
+          {{block.price}} M
+          </div>
         </div>
+        <div :class="style.parking"><img :class="style.image" src="/board/main/parking.png" alt="parking"/></div>
       </div>
-    </div>
-    <div :class="style.bottom">
-      <div :class="style.toJail"><img :class="style.image" src="/board/main/guard.png" alt="to jail"/></div>
-      <div :class="style.block" v-for="(block, index) in bottomBlocks" :key="index">
-        <div :class="style[block.color]"/>
-        <div :class="block.type === 'block' ? style.imageBlock : style.chanceBlock">
-          <div v-if="block.class" :class="style[block.class]"/>
-          <div v-if="block.type === 'chance'" :class="style.chance"/>
-        </div>
-        <div v-if="block.price" :class="style.price">
-        {{block.price}} M
-        </div>
-      </div>
-      <div :class="style.parking"><img :class="style.image" src="/board/main/parking.png" alt="parking"/></div>
     </div>
   </div>
 </template>
 
 <style module lang="scss">
+  .tableGame {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
 </style>

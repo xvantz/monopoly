@@ -1,0 +1,9 @@
+@import "@/assets/global.scss";
+
+.players {
+  display: flex;
+  width: VWFullHD(500);
+  height: VWFullHD(300);
+  border: 1px solid #FFF;
+  margin-right: VWFullHD(30);
+}

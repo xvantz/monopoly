@@ -15,9 +15,7 @@ import MyButton from '@/components/shared/MyButton.vue'
 <!--      </nav>-->
 <!--    </div>-->
 <!--  </header>-->
-  <div class="container">
     <RouterView />
-  </div>
 <!--  <footer class="w-full bg-secondary">-->
 <!--    <div class="container h-20 p-3">-->
 
