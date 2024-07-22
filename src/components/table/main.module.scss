@@ -254,6 +254,42 @@
             background-size: cover;
             background-position: center;
           }
+
+          .movenpick {
+            width: VWFullHD(80);
+            height: VWFullHD(20);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("./img/brand/movenpick.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+
+          .rixos {
+            width: VWFullHD(80);
+            height: VWFullHD(30);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("./img/brand/rixos.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+
+          .jumeirah {
+            width: VWFullHD(80);
+            height: VWFullHD(30);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("./img/brand/jumeirah.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
         }
 
         .chanceBlock {
@@ -356,6 +392,78 @@
             background-size: cover;
             background-position: center;
           }
+
+          .gucci {
+            width: VWFullHD(60);
+            height: VWFullHD(60);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("./img/brand/gucci.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+
+          .dior {
+            width: VWFullHD(70);
+            height: VWFullHD(30);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("./img/brand/dior.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+
+          .balenciaga {
+            width: VWFullHD(80);
+            height: VWFullHD(45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("./img/brand/balenciaga.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+
+          .tiffany {
+            width: VWFullHD(90);
+            height: VWFullHD(40);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("./img/brand/tiffany.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+          }
+
+          .chopard {
+            width: VWFullHD(80);
+            height: VWFullHD(35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("./img/brand/chopard.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+
+          .cartier {
+            width: VWFullHD(80);
+            height: VWFullHD(25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("./img/brand/cartier.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
         }
 
         .chanceBlock {
@@ -447,6 +555,84 @@
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
+        }
+
+        .hennessy {
+          width: VWFullHD(85);
+          height: VWFullHD(40);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-image: url("./img/brand/hennessy.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          transform: rotate(-90deg);
+        }
+
+        .moet {
+          width: VWFullHD(90);
+          height: VWFullHD(40);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-image: url("./img/brand/moet.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          transform: rotate(-90deg);
+        }
+
+        .jagermeister {
+          width: VWFullHD(100);
+          height: VWFullHD(60);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-image: url("./img/brand/jagermeister.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          transform: rotate(-90deg);
+        }
+
+        .qatar {
+          width: VWFullHD(100);
+          height: VWFullHD(20);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-image: url("./img/brand/qatar.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          transform: rotate(-90deg);
+        }
+
+        .etihad {
+          width: VWFullHD(100);
+          height: VWFullHD(30);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-image: url("./img/brand/etihad.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          transform: rotate(-90deg);
+        }
+
+        .flyEmirates {
+          width: VWFullHD(100);
+          height: VWFullHD(30);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-image: url("./img/brand/flyEmirates.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          transform: rotate(-90deg);
         }
       }
 

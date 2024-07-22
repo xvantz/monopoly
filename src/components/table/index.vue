@@ -14,34 +14,34 @@
   ]
 
   const rightBlocks = [
-    {name: "12", color: "green", price: 140, type: "block"},
+    {name: "12", color: "green", price: 140, type: "block", class: "gucci"},
     {name: "13", color: "none", price: 100, type: "block", class: "github"},
-    {name: "14", color: "green", price: 140, type: "block"},
-    {name: "15", color: "green", price: 160, type: "block"},
+    {name: "14", color: "green", price: 140, type: "block", class: "dior"},
+    {name: "15", color: "green", price: 160, type: "block", class: "balenciaga"},
     {name: "16", color: "none", price: 200, type: "block", class: "rollsRoyce"},
-    {name: "17", color: "blue", price: 180, type: "block"},
+    {name: "17", color: "blue", price: 180, type: "block", class: "tiffany"},
     {name: "18", color: "none", type: "chance"},
-    {name: "19", color: "blue", price: 180, type: "block"},
-    {name: "20", color: "blue", price: 200, type: "block"},
+    {name: "19", color: "blue", price: 180, type: "block", class: "chopard"},
+    {name: "20", color: "blue", price: 200, type: "block", class: "cartier"},
   ]
 
   const bottomBlocks = [
-    {name: "22", color: "brown", price: 220},
+    {name: "22", color: "brown", price: 220, type: "block", class: "hennessy"},
     {name: "23", color: "none", type: "chance"},
-    {name: "24", color: "brown", price: 220},
-    {name: "25", color: "brown", price: 240},
+    {name: "24", color: "brown", price: 220, type: "block", class: "moet"},
+    {name: "25", color: "brown", price: 240, type: "block", class: "jagermeister"},
     {name: "26", color: "none", price: 200, type: "block", class: "porsche"},
-    {name: "27", color: "lightBlue", price: 260},
-    {name: "28", color: "lightBlue", price: 260},
+    {name: "27", color: "lightBlue", price: 260, type: "block", class: "qatar"},
+    {name: "28", color: "lightBlue", price: 260, type: "block", class: "etihad"},
     {name: "29", color: "none", price: 100, type: "block", class: "adobe"},
-    {name: "30", color: "lightBlue", price: 280},
+    {name: "30", color: "lightBlue", price: 280, type: "block", class: "flyEmirates"},
   ].reverse()
 
   const leftBlocks = [
-    {name: "31", color: "purple", price: 300},
+    {name: "31", color: "purple", price: 300, type: "block", class: "movenpick"},
     {name: "32", color: "none", type: "chance"},
-    {name: "33", color: "purple", price: 300},
-    {name: "34", color: "purple", price: 320},
+    {name: "33", color: "purple", price: 300, type: "block", class: "rixos"},
+    {name: "34", color: "purple", price: 320, type: "block", class: "jumeirah"},
     {name: "35", color: "none", price: 200, type: "block", class: "lamborghini"},
     {name: "36", color: "none", type: "chance"},
     {name: "37", color: "orange", price: 350, type: "block", class: "huawei"},
